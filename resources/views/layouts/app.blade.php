@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Specter Litt | Advocacia de Alta Performance')</title>
+    <title>@yield('title', 'Pearson Specter Litt | Advocacia Corporativa')</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,48 +13,103 @@
 </head>
 <body class="bg-premium text-midnight font-body antialiased overflow-x-hidden">
 
-    <header id="header" class="fixed top-0 left-0 w-full z-50 bg-premium/95 backdrop-blur-md border-b border-champagne/20 transition-all duration-500">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center" id="nav-container">
+    <header id="site-header" class="fixed top-0 left-0 w-full z-50 bg-transparent py-6 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             
             <a href="/" class="flex items-center gap-4">
-                <div class="font-title text-4xl font-bold text-champagne border-r border-champagne pr-4">SL</div>
-                <div class="font-title text-lg font-semibold text-midnight tracking-widest leading-tight uppercase">Specter Litt<br><span class="text-xs font-body tracking-[0.2em] text-midnight/60">Advogados</span></div>
+                <div class="font-title text-4xl font-bold text-champagne border-r border-champagne pr-4">PSL</div>
+                <div class="font-title text-lg font-semibold text-midnight tracking-widest leading-tight uppercase">Pearson Specter Litt<br><span class="text-xs font-body tracking-[0.2em] text-midnight/60">Advogados</span></div>
             </a>
             
             <nav class="hidden lg:flex gap-10 items-center">
                 <a href="/a-banca" class="text-sm tracking-widest uppercase text-midnight hover:text-champagne transition-colors duration-300">A Banca</a>
                 <a href="/expertises" class="text-sm tracking-widest uppercase text-midnight hover:text-champagne transition-colors duration-300">Áreas de Expertise</a>
-                <a href="/contato" class="text-xs tracking-widest uppercase text-white bg-midnight px-6 py-3 rounded-full hover:bg-champagne transition-colors duration-300">Contato</a>
+                <a href="/contato" id="header-btn" class="text-xs tracking-widest uppercase text-midnight border border-midnight bg-transparent px-6 py-3 rounded-full hover:bg-champagne hover:text-midnight hover:border-champagne transition-all duration-300">
+                    Contato
+                </a>
             </nav>
 
             <button class="lg:hidden text-midnight text-2xl" id="mobile-menu-btn" aria-label="Abrir menu">☰</button>
         </div>
     </header>
 
-    <main class="min-h-screen pt-28">
+    <main class="min-h-screen">
         @yield('content')
     </main>
 
-    <footer class="bg-midnight text-premium pt-24 pb-10">
-        <div class="max-w-7xl mx-auto px-6 text-center lg:text-left">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                <div>
-                    <div class="font-title text-3xl font-semibold text-champagne mb-4">Specter Litt Advogados</div>
-                    <p class="text-premium/70 text-sm max-w-md leading-relaxed font-light mx-auto lg:mx-0">
-                        A última linha de defesa para corporações que não aceitam perder.
+    <footer class="bg-midnight text-premium pt-20 pb-10 border-t-4 border-champagne">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="font-title text-4xl font-bold text-champagne border-r border-champagne pr-4">PSL</div>
+                        <div class="font-title text-lg font-semibold text-white tracking-widest leading-tight uppercase">Pearson Specter Litt</div>
+                    </div>
+                    <p class="text-premium/60 text-sm max-w-sm leading-relaxed font-light">
+                        A última linha de defesa para corporações que não aceitam perder. Atuação cirúrgica em litígios de alta complexidade.
                     </p>
                 </div>
-                <div class="flex flex-col md:items-end justify-center">
-                    <a href="/contato" class="inline-flex items-center justify-center bg-champagne text-midnight px-8 py-4 text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white hover:text-midnight transition-all duration-300 shadow-lg">
-                        Solicitar Parecer Executivo
-                    </a>
+                
+                <div>
+                    <h4 class="font-title text-xl text-champagne mb-6">Navegação</h4>
+                    <ul class="space-y-3 text-sm text-premium/70">
+                        <li><a href="/" class="hover:text-champagne transition-colors">Página Inicial</a></li>
+                        <li><a href="/a-banca" class="hover:text-champagne transition-colors">A Banca</a></li>
+                        <li><a href="/expertises" class="hover:text-champagne transition-colors">Expertises</a></li>
+                        <li><a href="/contato" class="hover:text-champagne transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-title text-xl text-champagne mb-6">Conexões</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-premium/20 flex items-center justify-center hover:bg-champagne hover:border-champagne text-premium transition-all duration-300">In</a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-premium/20 flex items-center justify-center hover:bg-champagne hover:border-champagne text-premium transition-all duration-300">X</a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-premium/20 flex items-center justify-center hover:bg-champagne hover:border-champagne text-premium transition-all duration-300">Ig</a>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-premium/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-premium/40 tracking-wider">
-                <p>&copy; {{ date('Y') }} Specter Litt. Todos os direitos reservados.</p>
+
+            <div class="border-t border-premium/10 pt-8 flex flex-col items-center justify-center text-center">
+                <p class="text-sm font-title tracking-wider text-premium/60 mb-2">
+                    &copy; 2026 Pearson Specter Litt. Todos os direitos reservados.
+                </p>
+                <p class="text-xs text-premium/40 font-light tracking-wide">
+                    Design e Desenvolvimento por <a href="#" class="text-champagne hover:underline font-bold">Felipe Boemo</a>
+                </p>
             </div>
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('site-header');
+            const btn = document.getElementById('header-btn');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    // Estado Rolado (Fundo sólido, botão preenchido)
+                    header.classList.replace('bg-transparent', 'bg-premium/95');
+                    header.classList.replace('py-6', 'py-4');
+                    header.classList.add('backdrop-blur-md', 'shadow-sm');
+                    
+                    btn.classList.replace('bg-transparent', 'bg-midnight');
+                    btn.classList.replace('text-midnight', 'text-white');
+                    btn.classList.replace('border-midnight', 'border-transparent');
+                } else {
+                    // Estado Inicial (Transparente, botão vazado)
+                    header.classList.replace('bg-premium/95', 'bg-transparent');
+                    header.classList.replace('py-4', 'py-6');
+                    header.classList.remove('backdrop-blur-md', 'shadow-sm');
+                    
+                    btn.classList.replace('bg-midnight', 'bg-transparent');
+                    btn.classList.replace('text-white', 'text-midnight');
+                    btn.classList.replace('border-transparent', 'border-midnight');
+                }
+            });
+        });
+    </script>
+    
+    @stack('scripts')
 </body>
 </html>
