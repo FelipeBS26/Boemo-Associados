@@ -6,6 +6,21 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    /* Nossas Cores Premium */
+    --color-premium: #fbf9f6;
+    --color-midnight: #0a1424;
+    --color-midnight-muted: #16243a;
+    --color-champagne: #c5a880;
+    --color-champagne-hover: #b3956d;
+
+    /* Nossas Fontes */
+    --font-title: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Regras globais mínimas */
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
 }
