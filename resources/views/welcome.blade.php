@@ -92,4 +92,66 @@
             </div>
         </div>
     </section>
+
+    <section class="py-32 bg-premium">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div>
+                    <span class="block text-xs uppercase tracking-[3px] text-champagne font-semibold mb-4">Nossos Campos de Força</span>
+                    <h2 class="font-title text-3xl md:text-4xl text-midnight leading-snug font-medium">Nossas Áreas de Expertise</h2>
+                </div>
+                <a href="/expertises" class="text-sm font-semibold uppercase tracking-widest text-midnight hover:text-champagne transition-colors duration-300 flex items-center gap-2 group">
+                    Conheça nossas verticais <span class="group-hover:translate-x-1 transition-transform duration-300">&rarr;</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <a href="/expertises" class="group block border border-champagne/20 bg-white p-10 hover:bg-midnight hover:border-midnight transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <h3 class="font-title text-2xl text-midnight group-hover:text-champagne mb-4 transition-colors duration-500">Direito Societário e M&A</h3>
+                    <p class="text-midnight/70 group-hover:text-premium/80 leading-relaxed transition-colors duration-500 font-light">Estruturação de operações societárias complexas, governança e auditoria jurídica para aquisições transacionais.</p>
+                </a>
+                
+                <a href="/expertises" class="group block border border-champagne/20 bg-white p-10 hover:bg-midnight hover:border-midnight transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <h3 class="font-title text-2xl text-midnight group-hover:text-champagne mb-4 transition-colors duration-500">Planejamento Tributário</h3>
+                    <p class="text-midnight/70 group-hover:text-premium/80 leading-relaxed transition-colors duration-500 font-light">Engenharia fiscal de alta performance voltada para a otimização de ativos corporativos sob estrita segurança legal.</p>
+                </a>
+                
+                <a href="/expertises" class="group block border border-champagne/20 bg-white p-10 hover:bg-midnight hover:border-midnight transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <h3 class="font-title text-2xl text-midnight group-hover:text-champagne mb-4 transition-colors duration-500">Contencioso Estratégico</h3>
+                    <p class="text-midnight/70 group-hover:text-premium/80 leading-relaxed transition-colors duration-500 font-light">Defesa implacável em litígios de alta complexidade em tribunais superiores, mitigando riscos financeiros.</p>
+                </a>
+                
+                <a href="/expertises" class="group block border border-champagne/20 bg-white p-10 hover:bg-midnight hover:border-midnight transition-all duration-500 shadow-sm hover:shadow-2xl">
+                    <h3 class="font-title text-2xl text-midnight group-hover:text-champagne mb-4 transition-colors duration-500">Blindagem Patrimonial</h3>
+                    <p class="text-midnight/70 group-hover:text-premium/80 leading-relaxed transition-colors duration-500 font-light">Mecanismos sofisticados de governança familiar e estruturação de holdings para proteção e perpetuidade de bens.</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-midnight border-y border-champagne/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center divide-y md:divide-y-0 md:divide-x divide-champagne/20">
+                
+                <div class="py-4 md:py-0">
+                    <span class="block font-title text-5xl md:text-6xl text-champagne mb-4">+25</span>
+                    <span class="block text-sm uppercase tracking-widest text-premium/70">Anos de Atuação<br>Corporativa</span>
+                </div>
+                
+                <div class="py-4 md:py-0">
+                    <span class="block font-title text-5xl md:text-6xl text-champagne mb-4">R$ X Bi</span>
+                    <span class="block text-sm uppercase tracking-widest text-premium/70">Em Operações<br>Estruturadas</span>
+                </div>
+                
+                <div class="py-4 md:py-0">
+                    <span class="block font-title text-5xl md:text-6xl text-champagne mb-4">Exclusivo</span>
+                    <span class="block text-sm uppercase tracking-widest text-premium/70">Multinacionais e<br>Family Offices</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 @endsection
