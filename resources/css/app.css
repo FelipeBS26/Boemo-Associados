@@ -13,12 +13,11 @@
     --color-champagne: #c5a880;
     --color-champagne-hover: #b3956d;
 
-    /* Nossas Fontes */
-    --font-title: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    /* Novas Fontes Clássicas e de Autoridade */
+    --font-title: 'Cormorant Garamond', serif;
+    --font-body: 'Lato', sans-serif;
 }
 
-/* Regras globais mínimas */
 @layer base {
     html {
         scroll-behavior: smooth;
