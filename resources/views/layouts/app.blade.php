@@ -120,7 +120,6 @@
             });
         });
 
-        <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Lógica do Scroll no Header
             const header = document.getElementById('site-header');
@@ -184,9 +183,8 @@
                 });
             }
         });
-    </script>
+        </script>
 
-    </script>
     
     @stack('scripts')
 </body>
