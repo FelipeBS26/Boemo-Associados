@@ -1,9 +1,8 @@
 @extends('layouts.app')
-
 @section('title', 'Contato Confidencial | Pearson Specter Litt')
+@section('hero_theme', 'dark')
 
 @section('content')
-
     <section class="relative pt-40 pb-32 border-b border-champagne/20 overflow-hidden">
         
         <div class="absolute inset-0 w-full h-full bg-fixed bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80');"></div>
@@ -17,7 +16,7 @@
             <h1 class="font-title text-5xl md:text-6xl text-white font-semibold mb-8">
                 Inicie uma <br><span class="text-champagne">Conversa Confidencial.</span>
             </h1>
-            <p class="text-lg text-white/70 max-w-2xl mx-auto font-light leading-relaxed">
+            <p class="text-lg text-white/70 max-w-2xl mx-auto font-normal leading-relaxed">
                 Nossas linhas são criptografadas e protegidas pelo mais absoluto sigilo profissional. Preencha os dados preliminares abaixo para que o sócio responsável pelo seu setor seja alocado para o caso.
             </p>
         </div>
@@ -36,7 +35,7 @@
                     
                     <div id="step-1" class="form-step transition-all duration-500 absolute w-full inset-0">
                         <h3 class="font-title text-3xl text-midnight font-semibold mb-2">Qual a natureza da sua demanda?</h3>
-                        <p class="text-sm text-midnight/50 mb-8">Selecione a área principal para direcionarmos ao especialista correto.</p>
+                        <p class="text-base text-midnight/50 mb-8">Selecione a área principal para direcionarmos ao especialista correto.</p>
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <label class="cursor-pointer">
@@ -63,9 +62,9 @@
 
                     <div id="step-2" class="form-step opacity-0 pointer-events-none translate-x-10 transition-all duration-500 absolute w-full inset-0">
                         <h3 class="font-title text-3xl text-midnight font-semibold mb-2">Descreva o cenário resumidamente.</h3>
-                        <p class="text-sm text-midnight/50 mb-8">Forneça os detalhes iniciais. Nenhuma informação financeira sensível deve ser inserida aqui.</p>
+                        <p class="text-base text-midnight/50 mb-8">Forneça os detalhes iniciais. Nenhuma informação financeira sensível deve ser inserida aqui.</p>
                         
-                        <textarea name="mensagem" rows="4" placeholder="Ex: Estamos em processo de due diligence para aquisição de uma concorrente e precisamos de auditoria..." class="w-full bg-transparent border border-midnight/20 rounded-2xl p-6 text-sm outline-none focus:border-champagne transition-colors resize-none" required></textarea>
+                        <textarea name="mensagem" rows="4" placeholder="Ex: Estamos em processo de due diligence para aquisição de uma concorrente e precisamos de auditoria..." class="w-full bg-transparent border border-midnight/20 rounded-2xl p-6 text-base outline-none focus:border-champagne transition-colors resize-none" required></textarea>
                         
                         <div class="mt-8 flex justify-between items-center">
                             <button type="button" onclick="prevStep(1)" class="text-xs uppercase tracking-widest text-midnight/50 hover:text-midnight font-bold transition-colors">&larr; Voltar</button>
@@ -75,13 +74,13 @@
 
                     <div id="step-3" class="form-step opacity-0 pointer-events-none translate-x-10 transition-all duration-500 absolute w-full inset-0">
                         <h3 class="font-title text-3xl text-midnight font-semibold mb-2">Para onde enviamos nosso parecer?</h3>
-                        <p class="text-sm text-midnight/50 mb-8">Nossa equipe executiva entrará em contato em até 4 horas úteis.</p>
+                        <p class="text-base text-midnight/50 mb-8">Nossa equipe executiva entrará em contato em até 4 horas úteis.</p>
                         
                         <div class="space-y-4">
-                            <input type="text" name="nome" placeholder="Nome Completo" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm outline-none focus:border-champagne transition-colors" required>
+                            <input type="text" name="nome" placeholder="Nome Completo" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base outline-none focus:border-champagne transition-colors" required>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="email" name="email" placeholder="E-mail Corporativo" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm outline-none focus:border-champagne transition-colors" required>
-                                <input type="tel" name="telefone" placeholder="Telefone Direto" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm outline-none focus:border-champagne transition-colors" required>
+                                <input type="email" name="email" placeholder="E-mail Corporativo" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base outline-none focus:border-champagne transition-colors" required>
+                                <input type="tel" name="telefone" placeholder="Telefone Direto" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base outline-none focus:border-champagne transition-colors" required>
                             </div>
                         </div>
 
@@ -97,8 +96,8 @@
             <div class="mt-20 text-center">
                 <span class="text-champagne text-3xl mb-4 block">❖</span>
                 <h4 class="font-title text-2xl text-midnight font-semibold mb-2">Pearson Specter Litt | Matriz</h4>
-                <p class="text-midnight/60 font-light text-sm">601 Lexington Avenue, 50th Floor<br>New York, NY 10022</p>
-                <p class="text-midnight/60 font-light text-sm mt-4">+1 (212) 555-0198</p>
+                <p class="text-midnight/60 font-normal text-base">601 Lexington Avenue, 50th Floor<br>New York, NY 10022</p>
+                <p class="text-midnight/60 font-normal text-base mt-4">+1 (212) 555-0198</p>
             </div>
         </div>
     </section>
@@ -108,35 +107,29 @@
 @push('scripts')
 <script>
     function nextStep(stepNumber) {
-        // Esconde todos
         document.querySelectorAll('.form-step').forEach(step => {
             step.classList.add('opacity-0', 'pointer-events-none', '-translate-x-10');
             step.classList.remove('opacity-100', 'pointer-events-auto', 'translate-x-0');
         });
 
-        // Mostra o atual
         const currentStep = document.getElementById(`step-${stepNumber}`);
         currentStep.classList.remove('opacity-0', 'pointer-events-none', '-translate-x-10', 'translate-x-10');
         currentStep.classList.add('opacity-100', 'pointer-events-auto', 'translate-x-0');
 
-        // Atualiza a barra de progresso (33%, 66%, 100%)
         const progressBar = document.getElementById('progress-bar');
         progressBar.style.width = `${(stepNumber / 3) * 100}%`;
     }
 
     function prevStep(stepNumber) {
-        // Esconde todos empurrando para a direita
         document.querySelectorAll('.form-step').forEach(step => {
             step.classList.add('opacity-0', 'pointer-events-none', 'translate-x-10');
             step.classList.remove('opacity-100', 'pointer-events-auto', 'translate-x-0', '-translate-x-10');
         });
 
-        // Mostra o atual
         const currentStep = document.getElementById(`step-${stepNumber}`);
         currentStep.classList.remove('opacity-0', 'pointer-events-none', 'translate-x-10');
         currentStep.classList.add('opacity-100', 'pointer-events-auto', 'translate-x-0');
 
-        // Atualiza a barra
         const progressBar = document.getElementById('progress-bar');
         progressBar.style.width = `${(stepNumber / 3) * 100}%`;
     }

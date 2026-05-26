@@ -17,11 +17,11 @@
                     Não jogamos as probabilidades.<br>Nós jogamos o homem.
                 </h1>
                 
-                <p class="text-lg md:text-xl text-midnight/70 leading-relaxed mb-10 max-w-2xl font-light mx-auto lg:mx-0">
+                <p class="text-lg md:text-xl text-midnight/85 leading-relaxed mb-10 max-w-2xl font-normal mx-auto lg:mx-0">
                     Defendemos os interesses de corporações e grandes patrimônios com discrição absoluta, agressividade estratégica e precisão cirúrgica.
                 </p>
                 
-                <a href="/contato" class="inline-flex items-center justify-center bg-midnight text-white px-10 py-4 text-sm font-bold uppercase tracking-widest rounded-full hover:bg-champagne transition-all duration-300 shadow-xl">
+                <a href="/contato" class="inline-flex items-center justify-center bg-midnight text-white px-10 py-4 text-base font-bold uppercase tracking-widest rounded-full hover:bg-champagne transition-all duration-300 shadow-xl">
                     Falar com um Sócio
                 </a>
             </div>
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="w-full h-[400px] bg-premium rounded-2xl flex items-center justify-center mb-10 relative border border-champagne/10">
-                    <span class="text-midnight/30 font-body text-sm">[ Imagem: Balança da Justiça ]</span>
+                    <span class="text-midnight/30 font-body text-base">[ Imagem: Balança da Justiça ]</span>
                     
                     <div class="absolute -bottom-8 left-0 right-0 flex justify-center gap-4">
                         <div class="w-28 h-28 bg-white rounded-full flex flex-col items-center justify-center shadow-xl border border-premium z-10">
@@ -71,7 +71,7 @@
                 <h2 class="font-title text-4xl md:text-5xl text-midnight font-semibold mb-6 leading-tight">
                     Nossa ampla <br><span class="text-champagne">experiência jurídica</span>
                 </h2>
-                <p class="text-midnight/70 leading-relaxed mb-8 font-light text-base">
+                <p class="text-midnight/85 leading-relaxed mb-8 font-normal text-base">
                     Com décadas de atuação nos tribunais superiores e em negociações corporativas de alto risco, estruturamos defesas sólidas e criamos oportunidades através do ordenamento jurídico. O sucesso não é acaso, é método.
                 </p>
                 
@@ -100,7 +100,7 @@
                     
                     <div class="bg-premium rounded-2xl overflow-hidden relative z-10 text-left shadow-lg">
                         <div class="h-80 bg-black/10 flex items-center justify-center">
-                            <span class="text-midnight/40 text-sm font-body">[ Imagem: Harvey Specter ]</span>
+                            <span class="text-midnight/40 text-base font-body">[ Imagem: Harvey Specter ]</span>
                         </div>
                         <div class="p-6 text-center">
                             <h3 class="font-title text-2xl text-midnight font-bold mb-1">Harvey Specter</h3>
@@ -113,7 +113,7 @@
                     <div class="absolute -inset-2 border border-champagne rounded-3xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 z-0"></div>
                     <div class="bg-premium rounded-2xl overflow-hidden relative z-10 text-left shadow-lg">
                         <div class="h-80 bg-black/10 flex items-center justify-center">
-                            <span class="text-midnight/40 text-sm font-body">[ Imagem: Jessica Pearson ]</span>
+                            <span class="text-midnight/40 text-base font-body">[ Imagem: Jessica Pearson ]</span>
                         </div>
                         <div class="p-6 text-center">
                             <h3 class="font-title text-2xl text-midnight font-bold mb-1">Jessica Pearson</h3>
@@ -126,7 +126,7 @@
                     <div class="absolute -inset-2 border border-champagne rounded-3xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 z-0"></div>
                     <div class="bg-premium rounded-2xl overflow-hidden relative z-10 text-left shadow-lg">
                         <div class="h-80 bg-black/10 flex items-center justify-center">
-                            <span class="text-midnight/40 text-sm font-body">[ Imagem: Louis Litt ]</span>
+                            <span class="text-midnight/40 text-base font-body">[ Imagem: Louis Litt ]</span>
                         </div>
                         <div class="p-6 text-center">
                             <h3 class="font-title text-2xl text-midnight font-bold mb-1">Louis Litt</h3>
@@ -139,7 +139,7 @@
                     <div class="absolute -inset-2 border border-champagne rounded-3xl opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 z-0"></div>
                     <div class="bg-premium rounded-2xl overflow-hidden relative z-10 text-left shadow-lg">
                         <div class="h-80 bg-black/10 flex items-center justify-center">
-                            <span class="text-midnight/40 text-sm font-body">[ Imagem: Mike Ross ]</span>
+                            <span class="text-midnight/40 text-base font-body">[ Imagem: Mike Ross ]</span>
                         </div>
                         <div class="p-6 text-center">
                             <h3 class="font-title text-2xl text-midnight font-bold mb-1">Mike Ross</h3>
@@ -220,8 +220,8 @@
                         <div class="w-10 h-10 rounded-full bg-black/5 border border-white -ml-4 flex items-center justify-center text-[10px] text-midnight/40">Img</div>
                     </div>
                     <h4 class="font-bold text-midnight mb-1">Richard Gomes</h4>
-                    <p class="text-champagne text-sm mb-4 tracking-widest">★★★★★</p>
-                    <p class="text-midnight/70 font-light italic max-w-md text-sm md:text-base leading-relaxed text-center lg:text-left">
+                    <p class="text-champagne text-base mb-4 tracking-widest">★★★★★</p>
+                    <p class="text-midnight/85 font-normal italic max-w-md text-base md:text-base leading-relaxed text-center lg:text-left">
                         "Eles mitigaram um risco de altíssimo nível na nossa última fusão. A clareza e agressividade da equipe me deram total tranquilidade para focar no negócio."
                     </p>
                 </div>
@@ -240,14 +240,14 @@
 
                     <form class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="Nome" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm font-light outline-none focus:border-champagne transition-colors">
-                            <input type="text" placeholder="Sobrenome" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm font-light outline-none focus:border-champagne transition-colors">
+                            <input type="text" placeholder="Nome" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base font-normal outline-none focus:border-champagne transition-colors">
+                            <input type="text" placeholder="Sobrenome" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base font-normal outline-none focus:border-champagne transition-colors">
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="email" placeholder="E-mail" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm font-light outline-none focus:border-champagne transition-colors">
-                            <input type="tel" placeholder="Telefone" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-sm font-light outline-none focus:border-champagne transition-colors">
+                            <input type="email" placeholder="E-mail" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base font-normal outline-none focus:border-champagne transition-colors">
+                            <input type="tel" placeholder="Telefone" class="w-full bg-transparent border border-midnight/20 rounded-full px-6 py-4 text-base font-normal outline-none focus:border-champagne transition-colors">
                         </div>
-                        <textarea placeholder="Sua mensagem..." rows="4" class="w-full bg-transparent border border-midnight/20 rounded-3xl px-6 py-4 text-sm font-light outline-none focus:border-champagne transition-colors resize-none"></textarea>
+                        <textarea placeholder="Sua mensagem..." rows="4" class="w-full bg-transparent border border-midnight/20 rounded-3xl px-6 py-4 text-base font-normal outline-none focus:border-champagne transition-colors resize-none"></textarea>
                         
                         <div class="pt-2">
                             <button type="submit" class="bg-champagne text-midnight font-bold uppercase tracking-widest text-xs px-10 py-4 rounded-full hover:bg-midnight hover:text-white transition-all duration-300">
