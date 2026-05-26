@@ -29,7 +29,18 @@
                 </a>
             </nav>
 
-            <button class="lg:hidden text-midnight text-2xl" id="mobile-menu-btn" aria-label="Abrir menu">☰</button>
+            <div id="mobile-menu" class="fixed inset-0 bg-premium/98 backdrop-blur-md z-40 flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-500 lg:hidden">
+                <nav class="flex flex-col items-center gap-8">
+                    <a href="/" class="mobile-link text-2xl font-title text-midnight hover:text-champagne transition-colors">Página Inicial</a>
+                    <a href="/a-banca" class="mobile-link text-2xl font-title text-midnight hover:text-champagne transition-colors">A Banca</a>
+                    <a href="/expertises" class="mobile-link text-2xl font-title text-midnight hover:text-champagne transition-colors">Áreas de Expertise</a>
+                    <a href="/contato" class="mobile-link mt-4 px-8 py-4 bg-midnight text-white text-sm font-bold uppercase tracking-widest rounded-full hover:bg-champagne transition-colors shadow-lg">
+                        Contato
+                    </a>
+                </nav>
+            </div>
+
+            <button class="lg:hidden text-midnight text-2xl relative z-50 transition-colors" id="mobile-menu-btn" aria-label="Alternar menu">☰</button>
         </div>
     </header>
 
@@ -108,6 +119,73 @@
                 }
             });
         });
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lógica do Scroll no Header
+            const header = document.getElementById('site-header');
+            const btn = document.getElementById('header-btn');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.replace('bg-transparent', 'bg-premium/95');
+                    header.classList.replace('py-6', 'py-4');
+                    header.classList.add('backdrop-blur-md', 'shadow-sm');
+                    
+                    if(btn) {
+                        btn.classList.replace('bg-transparent', 'bg-midnight');
+                        btn.classList.replace('text-midnight', 'text-white');
+                        btn.classList.replace('border-midnight', 'border-transparent');
+                    }
+                } else {
+                    header.classList.replace('bg-premium/95', 'bg-transparent');
+                    header.classList.replace('py-4', 'py-6');
+                    header.classList.remove('backdrop-blur-md', 'shadow-sm');
+                    
+                    if(btn) {
+                        btn.classList.replace('bg-midnight', 'bg-transparent');
+                        btn.classList.replace('text-white', 'text-midnight');
+                        btn.classList.replace('border-transparent', 'border-midnight');
+                    }
+                }
+            });
+
+            // Lógica do Menu Mobile
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            if (mobileBtn && mobileMenu) {
+                const toggleMenu = () => {
+                    isMenuOpen = !isMenuOpen;
+                    if (isMenuOpen) {
+                        // Mostra o menu e muda o ícone para "X"
+                        mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                        mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+                        mobileBtn.innerHTML = '✕';
+                        document.body.style.overflow = 'hidden'; // Evita scroll no fundo
+                    } else {
+                        // Esconde o menu e volta o ícone de hambúrguer
+                        mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+                        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                        mobileBtn.innerHTML = '☰';
+                        document.body.style.overflow = 'auto'; // Devolve o scroll
+                    }
+                };
+
+                mobileBtn.addEventListener('click', toggleMenu);
+
+                // Fecha o menu automaticamente ao clicar em um link
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (isMenuOpen) toggleMenu();
+                    });
+                });
+            }
+        });
+    </script>
+
     </script>
     
     @stack('scripts')
